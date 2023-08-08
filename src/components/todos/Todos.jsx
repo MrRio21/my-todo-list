@@ -1,14 +1,19 @@
 import React from 'react'
 import Todo from './Todo'
-// import 
+// import
 
-const Todos = () => {
+const Todos = (props) => {
   return (
     <div className='todos-list'>
-      <Todo/>
-      <Todo/>
-      <Todo/>
-      <Todo/>
+      {props.todos.map((todo) => (
+        <Todo
+          todo={todo}
+          key={todo.id}
+          toggleTodo={props.toggleTodo}
+          deleteTodo={props.deleteTodo}
+          editTodo={props.editTodo}
+        />
+      ))}
     </div>
   )
 }
