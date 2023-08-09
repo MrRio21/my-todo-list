@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <header>
-      <h1>قائمة المهام (0)</h1>
+      <h1>قائمة المهام</h1>
     </header>
   )
 }

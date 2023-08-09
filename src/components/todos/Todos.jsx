@@ -12,8 +12,13 @@ const Todos = (props) => {
           toggleTodo={props.toggleTodo}
           deleteTodo={props.deleteTodo}
           editTodo={props.editTodo}
+          mode={props.mode}
         />
       ))}
+
+      {props.todos.length === 0 && (
+        <h3 className='no-todos'> لا توجد مهام حالية ...</h3>
+      )}
     </div>
   )
 }
