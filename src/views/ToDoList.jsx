@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import TodosForm from '../components/todos/TodosForm'
 import Todos from '../components/todos/Todos'
 
-const initialData = JSON.parse(localStorage.getItem('todos')).length
+const initialData = JSON.parse(localStorage.getItem('todos'))?.length
   ? JSON.parse(localStorage.getItem('todos'))
   : [
       { id: 1, title: 'شراء مستلزمات', done: true },
