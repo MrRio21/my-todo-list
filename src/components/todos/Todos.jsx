@@ -1,9 +1,10 @@
 import React from 'react'
 import Todo from './Todo'
-// import
 
 const Todos = (props) => {
   return (
+    // < className='todos-list characters'>
+
     <div className='todos-list'>
       {props.todos.map((todo) => (
         <Todo

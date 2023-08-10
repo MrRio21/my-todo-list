@@ -8,7 +8,7 @@ const initialData = JSON.parse(localStorage.getItem('todos'))?.length
       { id: 1, title: 'شراء مستلزمات', done: true },
       { id: 4, title: 'اكمال كورس الرياكت', done: false },
       { id: 3, title: ' البحث عن عمل ', done: true },
-      { id: 2, title: 'اعمل بلوك لشادي', done: false },
+      // { id: 2, title: 'اعمل بلوك لشادي', done: false },
     ]
 
 const ToDoList = () => {
